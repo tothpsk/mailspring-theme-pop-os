@@ -5,9 +5,9 @@ So my colour choices were deeply inspired by this operating system.
 Since this is a dark theme, it is necessary to modify the style of email messages to be displayed correctly. For this reason I reused the code from a [Predawn](https://github.com/asparc/predawn) Mailspring theme. So all the credits go to asparc.
 
 # Screenshot
-![image](https://raw.githubusercontent.com/tothpsk/mailspring-theme-pop-os/main/screenshot/pop-os-theme%20screenshot%202.png)
+![image](https://raw.githubusercontent.com/tothpsk/mailspring-theme-pop-os/main/screenshot/pop-os-theme.png)
 
-![image](https://user-images.githubusercontent.com/11166910/114718504-584a6f00-9d36-11eb-99af-3ee56d012be9.png)
+![image](https://raw.githubusercontent.com/tothpsk/mailspring-theme-pop-os/main/screenshot/pop-os-theme%20screenshot%202.png)
 
 ![image](https://raw.githubusercontent.com/tothpsk/mailspring-theme-pop-os/main/screenshot/pop-os-theme%20screenshot%203.png)
 
