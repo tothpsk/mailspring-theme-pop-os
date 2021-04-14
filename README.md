@@ -9,7 +9,7 @@ Since this is a dark theme, it is necessary to modify the style of email message
 
 ![image](https://raw.githubusercontent.com/tothpsk/mailspring-theme-pop-os/main/screenshot/pop-os-theme%20screenshot%202.png)
 
-![image](https://user-images.githubusercontent.com/11166910/114725771-12dd7000-9d3d-11eb-8ef9-4dc63b4c207a.png)
+![image](https://raw.githubusercontent.com/tothpsk/mailspring-theme-pop-os/main/screenshot/pop-os-theme%20screenshot%203.png)
 
 # Installation
 1. Download [Mailspring](https://getmailspring.com/)
