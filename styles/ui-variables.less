@@ -1,0 +1,246 @@
+/*
+Include the standard variables from Mailspring's base theme:
+https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-variables.less
+*/
+@import "base/ui-variables";
+
+@accent-primary: #fbb86c;
+@accent-primary-dark: #fbb86c;
+
+@background-primary: #33302f;
+@background-off-primary: #33302f;
+@background-secondary: #3b3736;
+@background-tertiary: #3f3b39;
+
+@border-color-primary: #2c2a29;
+@border-color-secondary: #2c2a29;
+@border-color-tertiary: #fbb86c;
+@border-color-divider: #282625;
+
+@text-color: #e5e5e5;
+@text-color-subtle: #c0c0c0;
+@text-color-very-subtle: #808080;
+@text-color-inverse: #e5e5e5;
+@text-color-inverse-subtle: #e6e6e6;
+@text-color-inverse-very-subtle: #e6e6e6;
+@text-color-heading: #e6e6e6;
+
+@text-color-link: #fbb86c;
+@text-color-link-hover: #0077E5;
+@text-color-link-active: #fbb86c;
+
+@btn-default-bg-color: #4c4845;
+@dropdown-default-bg-color: #4c4845;
+
+@input-bg: #3f3b39;
+@input-border: #3f3b39;
+
+@list-bg: #4c4845;
+@list-border: #4c4845;
+@list-selected-color: @text-color-inverse;
+@list-focused-color: #33302f;
+
+@toolbar-background-color: #282625;
+@panel-background-color: #282625;
+
+@text-color-prefilter:    @text-base-prefilter;
+@text-base-prefilter:  spin(#fff - @text-color, 180);
+
+//Line below the toolbar
+.sheet-toolbar {
+    position: relative;
+    -webkit-app-region: drag;
+    border-bottom: 1px solid #33302f;
+    }
+    
+//Right panel, left border
+.column-MessageListSidebar {
+    border-left: transparent;
+}
+
+//Message panel, right border
+.flexbox-handle-horizontal div {
+    height: 100%;
+    box-shadow: transparent;
+}
+
+// Message filter
+@message-filter:       invert(100%) hue-rotate(180deg);
+@message-filter-undo:  hue-rotate(-180deg) invert(120%); // white will be a bit fainter
+
+@text-base-prefilter:  spin(#fff - @text-color, 180);
+//@orange-prefilter:     #fbb86c; // set manually, as hue-rotate is only an approximation of spin
+//@orange-prefilter:  spin(#fff - #fbb86c, 180); // set automatically, but suboptimally
+
+/* Badge with counter, secondary */
+.item-count-box:not(.selected):not(.focused) {
+  color: #33302f;
+  box-shadow: 0 0.5px 0 rgba(251, 184, 109, 0.6), 0 -0.5px 0 rgba(251, 184, 109, 0.6), 0.5px 0 0 rgba(251, 184, 109, 0.6), -0.5px 0 0 rgba(251, 184, 109, 0.6);
+  background: #fbb86c
+}
+
+/* Badge with counter, primary, selected */
+.outline-view .item .item-count-box.alt-count {
+    color: #fbb86c;
+    background: #33302f;
+    box-shadow: none;
+}
+
+/* Badge with counter, primary, not selected */
+.outline-view .item .item-count-box.alt-count:not(.selected):not(.focused) {
+    color: #33302f;
+    background: #fbb86c;
+    box-shadow: none;
+}
+
+/* tracking icon, unopened, unfocused */
+.open-tracking-icon img.content-mask.unopened {
+    background-color: #fde9d2);
+}
+
+/* tracking icon, mail list, unopened, focused */
+.list-item.focused .open-tracking-icon img.content-mask.unopened, .list-item.selected .open-tracking-icon img.content-mask.unopened {
+    background-color: #666666;
+}
+
+/* tracking icon, mail list, opened, unfocused */
+.open-tracking-icon img.content-mask.opened {
+    background-color: #e5e5e5;
+}
+
+/* tracking icon, opened, focused */
+.list-item.focused .open-tracking-icon img.content-mask.opened, .list-item.selected .open-tracking-icon img.content-mask.opened {
+    background-color: #e5e5e5;
+}
+
+/* tracking icon, message list, opened */
+.open-tracking-message-status.opened img.content-mask {
+    background-color: #e5e5e5;
+}
+
+/* tracking icon, mail list, unopened, unfocused */
+.open-tracking-icon img.content-mask.unopened {
+    background-color: #666666;  
+}
+
+//Tracking message status opened
+.open-tracking-message-status.opened {
+    color: #e5e5e5;
+}
+
+//Tracking message status unopened
+.open-tracking-message-status.unopened {
+    color: #808080;
+}
+
+// Account switching icon
+.account-switcher img {
+    zoom: 1 !important;
+    max-width: 10px;
+    max-height: 6px;
+    transform: none;
+    background-image: none;
+    background-color: @text-color-very-subtle;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path fill="#FFF" d="M0 0h1l4 4 4-4h1v1L5 6 0 1z"/></svg>');
+}
+
+//Search bar//
+.div.suggestions {
+    &:hover {
+    color:#fbb86c
+    }
+}
+
+//Composer button //
+.button-dropdown.btn-emphasis .primary-item, .button-dropdown.btn-emphasis .secondary-picker, .button-dropdown.btn-emphasis .only-item {
+    position: relative;
+    color: #33302f;
+    font-weight: 500;
+    background: #fbb86c;
+    box-shadow: none;
+    border: 0px solid #fbb86c;
+}
+
+.button-dropdown.btn-emphasis .primary-item img.content-mask, .button-dropdown.btn-emphasis .secondary-picker img.content-mask, .button-dropdown.btn-emphasis .only-item img.content-mask {
+    background-color: #33302f;
+}
+
+.button-dropdown.btn-emphasis .primary-item:active, .button-dropdown.btn-emphasis .secondary-picker:active, .button-dropdown.btn-emphasis .only-item:active {
+    background: #fbc689;
+}
+
+//Composer name//
+.tokenizing-field .token {
+    background: linear-gradient(to bottom, #4c4845 0%, #3f3c39 100%);
+}
+
+.tokenizing-field .token.selected, .tokenizing-field .token.dragging {
+    color: #33302f;
+}
+
+.tokenizing-field .token.selected .action img, .tokenizing-field .token.dragging .action img {
+    background-color: #33302f;
+}
+
+//Composer dropdown list//
+.menu .item.selected, .menu .item:active {
+    background-color: #4e4947;
+    color: #e5e5e5;
+}
+
+.div.button-dropdown.open.open-down {
+    background-color: #e5e5e5;
+    color: #e5e5e5;
+}
+
+.menu .item.selected, .menu .item:active {
+    background-color: #fbb86c;
+    color: #33302f;
+}
+
+.menu .item.selected .primary, .menu .item:active .primary {
+    color: #33302f;
+}
+
+.menu .item.selected .secondary, .menu .item:active .secondary {
+    color: #3f3b39;
+}
+
+//Reply button
+.button-dropdown .primary-item, .button-dropdown .only-item {
+    background: -webkit-gradient(linear, left top, left bottom, from(#4c4845), to(#3f3c39));
+}
+
+.button-dropdown .secondary-picker {
+    background: -webkit-gradient(linear, left top, left bottom, from(#4c4845), to(#3f3c39));
+}
+
+.button-dropdown.open.open-down .secondary-items {
+    background: #423d3c
+}
+
+//Composer unfocused
+#message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap {
+    background: #423d3c
+}
+
+//Composer focused, borders
+#message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap.focused {
+    box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.28), 0 1px 1.5px rgba(0, 0, 0, 0.08), 0 0 3px #fbb86c;
+}
+
+.composer-inner-wrap .composer-action-bar-wrap .composer-action-bar-content.unfocused {
+    background-color: #4c4845;
+}
+
+//Unsubscribe action
+.unsubscribe-action {
+    color: #fbb86c;
+    text-decoration: underline;
+}
+
+//Undo/redo floating message
+.undo-redo-toast .content {
+    background: #fbb86c;
+}
