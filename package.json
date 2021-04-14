@@ -1,0 +1,13 @@
+{
+  "name": "pop-os",
+  "title": "Pop OS Mailspring Theme",
+  "displayName": "Pop OS",
+  "theme": "ui",
+  "version": "1.1.0",
+  "description": "Theme inspired by Pop!_OS",
+  "license": "MIT",
+  "engines": {
+    "mailspring": "*"
+  }
+}
+
