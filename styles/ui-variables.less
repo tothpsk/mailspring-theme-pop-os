@@ -72,6 +72,13 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 //@orange-prefilter:     #fbb86c; // set manually, as hue-rotate is only an approximation of spin
 //@orange-prefilter:  spin(#fff - #fbb86c, 180); // set automatically, but suboptimally
 
+//to correct the colour of the links inside the mail body after applying the prefilter
+#inbox-html-wrapper > :not(table), #inbox-plain-wrapper > :not(table), #inbox-html-wrapper > :not(table) > :not(table), #inbox-plain-wrapper > :not(table) > :not(table), #inbox-html-wrapper > :not(table) > :not(table) > :not(table), #inbox-plain-wrapper > :not(table) > :not(table) > :not(table), #inbox-html-wrapper > :not(table) > :not(table) > :not(table) > :not(table), #inbox-plain-wrapper > :not(table) > :not(table) > :not(table) > :not(table) {
+a {
+    color: #864700;
+    }
+}
+
 /* Badge with counter, secondary */
 .item-count-box:not(.selected):not(.focused) {
   color: #33302f;
